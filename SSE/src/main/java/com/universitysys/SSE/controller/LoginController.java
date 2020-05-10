@@ -58,6 +58,8 @@ public class LoginController {
             return new ModelAndView(new RedirectView("/welcome"));
         }
         model.addAttribute("student", new Students());
+
+
         return new ModelAndView("index", model);
 
 

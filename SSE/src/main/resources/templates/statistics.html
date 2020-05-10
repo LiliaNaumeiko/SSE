@@ -35,11 +35,13 @@
 			<tr th:each="message: ${messages}">
 				<td th:text="${message.name}"></td>
 				<td th:text="${message.surname}"></td>
-				<td th:text="${message.sex}"></td>
+				<td class ="sex" th:text="${message.sex}"></td>
 				<td th:text="${message.nationality}"></td>
 				<td th:text="${message.date_of_birth}"></td>
 			</tr>
 		</table>
-		<button onclick="exportTableToExcel('tblData', 'students-data')">Export Table Data To Excel File</button>
+		<button onclick="exportTableToExcel('tblData','stat')">Export Table Data To Excel File</button>
+		<script src="https://d3js.org/d3.v4.js"></script>
+		<script src="/js/stat.js" th:src="@{/js/stat.js}"> </script>
 	</body>
 </html>
