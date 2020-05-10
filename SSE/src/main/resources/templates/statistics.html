@@ -21,7 +21,7 @@
 			<li role="presentation" ><a href="/payment"  th:href="@{/payment}">My Payments</a></li>
 			<li role="presentation" th:align="right" style="position:absolute;top:0;right:0;"><a href="/logout" th:href="@{/logout}">Log out</a></li>
 		</ul>
-		<table border="1" cellpadding="5" id="tblData">
+		<table border="1" cellpadding="5" id="dataTable" class="table">
 			<caption><h2>Statistics</h2></caption>
 			<thead>
 			<tr>
@@ -40,7 +40,27 @@
 				<td th:text="${message.date_of_birth}"></td>
 			</tr>
 		</table>
-		<button onclick="exportTableToExcel('tblData','stat')">Export Table Data To Excel File</button>
+		<button id="btnExportToCsv" type="button" class="button">Export Table Data To Excel File</button>
+		<script>
+			const dataTable = document.getElementById("dataTable");
+			const btnExportToCsv = document.getElementById("btnExportToCsv");
+
+			btnExportToCsv.addEventListener("click", () => {
+				const exporter = new TableCSVExporter(dataTable);
+				const csvOutput = exporter.convertToCSV();
+				const csvBlob = new Blob([csvOutput], { type: "text/csv" });
+				const blobUrl = URL.createObjectURL(csvBlob);
+				const anchorElement = document.createElement("a");
+
+				anchorElement.href = blobUrl;
+				anchorElement.download = "stat.csv";
+				anchorElement.click();
+
+				setTimeout(() => {
+					URL.revokeObjectURL(blobUrl);
+				}, 500);
+			});
+		</script>
 		<script src="https://d3js.org/d3.v4.js"></script>
 		<script src="/js/stat.js" th:src="@{/js/stat.js}"> </script>
 	</body>

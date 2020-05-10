@@ -1,31 +1,48 @@
 
+class TableCSVExporter {
+    constructor (table, includeHeaders = true) {
+        this.table = table;
+        this.rows = Array.from(table.querySelectorAll("tr"));
 
-function exportTableToExcel(tableID, filename=''){
-    let downloadLink;
-    let dataType = 'application/vnd.ms-excel';
-    let tableSelect = document.getElementById("tblData");
-    let tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+        if (!includeHeaders && this.rows[0].querySelectorAll("th").length) {
+            this.rows.shift();
+        }
+    }
 
-    // Specify file name
-    filename = filename?filename+'.csv':'excel_data.csv';
+    convertToCSV () {
+        const lines = [];
+        const numCols = this._findLongestRowLength();
 
-    // Create download link element
-    downloadLink = document.createElement("a");
+        for (const row of this.rows) {
+            let line = "";
 
-    document.body.appendChild(downloadLink);
+            for (let i = 0; i < numCols; i++) {
+                if (row.children[i] !== undefined) {
+                    line += TableCSVExporter.parseCell(row.children[i]);
+                }
 
-    if(navigator.msSaveOrOpenBlob){
-        let blob = new Blob(['\ufeff', tableHTML], {
-            type: dataType
-        });
-        navigator.msSaveOrOpenBlob( blob, filename);
-    }else{
-        // Create a link to the file
-        downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+                line += (i !== (numCols - 1)) ? "," : "";
+            }
 
-        // Setting the file name
-        downloadLink.download = filename;
-        //triggering the function
-        downloadLink.click();
+            lines.push(line);
+        }
+
+        return lines.join("\n");
+    }
+
+    _findLongestRowLength () {
+        return this.rows.reduce((l, row) => row.childElementCount > l ? row.childElementCount : l, 0);
+    }
+
+    static parseCell (tableCell) {
+        let parsedValue = tableCell.textContent;
+
+        // Replace all double quotes with two double quotes
+        parsedValue = parsedValue.replace(/"/g, `""`);
+
+        // If value contains comma, new-line or double-quote, enclose in double quotes
+        parsedValue = /[",\n]/.test(parsedValue) ? `"${parsedValue}"` : parsedValue;
+
+        return parsedValue;
     }
 }
