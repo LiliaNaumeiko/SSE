@@ -37,3 +37,1062 @@ Using generated security password: 934cd33f-51a7-49f5-b0bd-18c5a118649e
 2020-05-12 17:14:08.507  WARN 24753 --- [main] c.u.S.SseApplication                     : Hey, This is a warning!
 2020-05-12 17:14:08.507 ERROR 24753 --- [main] c.u.S.SseApplication                     : Oops! We have an Error. OK
 2020-05-12 17:14:08.507 FATAL 24753 --- [main] c.u.S.SseApplication                     : Damn! Fatal error. Please fix me.
+2020-05-12 17:41:19.710  INFO 16860 --- [main] c.u.S.SseApplication                     : Starting SseApplication on DESKTOP-4OS45NN with PID 16860 (C:\Users\Olya\gitProjects\p8\SSE\SSE\target\classes started by Olya in C:\Users\Olya\gitProjects\p8\SSE\SSE)
+2020-05-12 17:41:19.729  INFO 16860 --- [main] c.u.S.SseApplication                     : No active profile set, falling back to default profiles: default
+2020-05-12 17:41:21.115  INFO 16860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 17:41:21.284  INFO 16860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153ms. Found 3 JPA repository interfaces.
+2020-05-12 17:41:22.008  INFO 16860 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-12 17:41:22.614  INFO 16860 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-05-12 17:41:22.649 ERROR 16860 --- [main] o.a.c.u.LifecycleBase                    : Failed to initialize component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:173) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:459) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:107) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:88) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:438) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:191) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at com.universitysys.SSE.SseApplication.main(SseApplication.java:21) [classes/:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:461) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:453) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:229) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:212) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1154) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:575) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	... 21 more
+
+2020-05-12 17:41:22.664  INFO 16860 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-05-12 17:41:22.665  INFO 16860 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-12 17:41:23.306  INFO 16860 --- [main] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-12 17:41:23.334  INFO 16860 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-05-12 17:41:23.335 DEBUG 16860 --- [main] o.s.w.c.ContextLoader                    : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-12 17:41:23.335  INFO 16860 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3535 ms
+2020-05-12 17:41:23.807  INFO 16860 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 17:41:23.941  INFO 16860 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-12 17:41:24.185  INFO 16860 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 17:41:24.370  INFO 16860 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-05-12 17:41:25.078  INFO 16860 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-05-12 17:41:25.102  INFO 16860 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 17:41:26.476  INFO 16860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 17:41:26.487  INFO 16860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 17:41:26.590 DEBUG 16860 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2020-05-12 17:41:27.201  INFO 16860 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3ccad149-191c-45c8-b295-f9bd227c5561
+
+2020-05-12 17:41:27.351  INFO 16860 --- [main] o.s.s.w.a.c.ChannelProcessingFilter      : Validated configuration attributes
+2020-05-12 17:41:27.368  INFO 16860 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.access.channel.ChannelProcessingFilter@32c08610, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f1c7fde, org.springframework.security.web.context.SecurityContextPersistenceFilter@3abdc11d, org.springframework.security.web.header.HeaderWriterFilter@724c26e0, org.springframework.security.web.authentication.logout.LogoutFilter@642d34f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@336e17be, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@394331a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b409174, org.springframework.security.web.session.SessionManagementFilter@5e41e6ad, org.springframework.security.web.access.ExceptionTranslationFilter@14983265, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25e203e6]
+2020-05-12 17:41:27.584  INFO 16860 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 17:41:27.600 DEBUG 16860 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-12 17:41:27.680 DEBUG 16860 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2020-05-12 17:41:27.687  INFO 16860 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-12 17:41:27.718 DEBUG 16860 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-12 17:41:27.731 DEBUG 16860 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-12 17:41:28.874 ERROR 16860 --- [main] o.a.c.u.LifecycleBase                    : Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:278) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) [spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at com.universitysys.SSE.SseApplication.main(SseApplication.java:21) [classes/:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:461) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:453) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:229) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:212) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1227) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:586) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	... 14 more
+
+2020-05-12 17:41:30.585  INFO 16860 --- [main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-05-12 17:41:30.591  WARN 16860 --- [main] o.a.c.l.WebappClassLoaderBase            : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.6/java.lang.Thread.run(Thread.java:834)
+2020-05-12 17:41:30.603  INFO 16860 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-12 17:41:30.610 ERROR 16860 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2020-05-12 17:41:30.613  INFO 16860 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 17:41:30.615  INFO 16860 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 17:41:30.619  INFO 16860 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-05-12 17:41:30.643  INFO 16860 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-05-12 17:49:59.874  INFO 25308 --- [main] c.u.S.SseApplication                     : Starting SseApplication on DESKTOP-4OS45NN with PID 25308 (C:\Users\Olya\gitProjects\p8\SSE\SSE\target\classes started by Olya in C:\Users\Olya\gitProjects\p8\SSE\SSE)
+2020-05-12 17:49:59.889  INFO 25308 --- [main] c.u.S.SseApplication                     : No active profile set, falling back to default profiles: default
+2020-05-12 17:50:01.068  INFO 25308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 17:50:01.331  INFO 25308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 250ms. Found 3 JPA repository interfaces.
+2020-05-12 17:50:01.930  INFO 25308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-12 17:50:02.399  INFO 25308 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-05-12 17:50:02.435  INFO 25308 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-05-12 17:50:02.437  INFO 25308 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-12 17:50:02.937  INFO 25308 --- [main] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-12 17:50:02.960  INFO 25308 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-05-12 17:50:02.961 DEBUG 25308 --- [main] o.s.w.c.ContextLoader                    : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-12 17:50:02.961  INFO 25308 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3013 ms
+2020-05-12 17:50:03.263  INFO 25308 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 17:50:03.411  INFO 25308 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-12 17:50:03.665  INFO 25308 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 17:50:03.874  INFO 25308 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-05-12 17:50:04.547  INFO 25308 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-05-12 17:50:04.597  INFO 25308 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 17:50:05.879  INFO 25308 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 17:50:05.893  INFO 25308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 17:50:05.996 DEBUG 25308 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2020-05-12 17:50:06.547  INFO 25308 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2525bfdb-6802-4afb-81db-9f0daaf8600a
+
+2020-05-12 17:50:06.687  INFO 25308 --- [main] o.s.s.w.a.c.ChannelProcessingFilter      : Validated configuration attributes
+2020-05-12 17:50:06.704  INFO 25308 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.access.channel.ChannelProcessingFilter@7e532f2d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ad6895a, org.springframework.security.web.context.SecurityContextPersistenceFilter@74babce8, org.springframework.security.web.header.HeaderWriterFilter@2ecc4be7, org.springframework.security.web.authentication.logout.LogoutFilter@bb38c49, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28e24663, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b2efcae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10e4cc6, org.springframework.security.web.session.SessionManagementFilter@483fe83a, org.springframework.security.web.access.ExceptionTranslationFilter@18bf1bad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5036a286]
+2020-05-12 17:50:06.940  INFO 25308 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 17:50:06.956 DEBUG 25308 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-12 17:50:07.029 DEBUG 25308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2020-05-12 17:50:07.038  INFO 25308 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-12 17:50:07.067 DEBUG 25308 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-12 17:50:07.079 DEBUG 25308 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-12 17:50:08.120  INFO 25308 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-05-12 17:50:08.125  INFO 25308 --- [main] c.u.S.SseApplication                     : Started SseApplication in 9.044 seconds (JVM running for 16.22)
+2020-05-12 17:50:08.128  INFO 25308 --- [main] c.u.S.SseApplication                     : Info log
+2020-05-12 17:50:08.128  WARN 25308 --- [main] c.u.S.SseApplication                     : Hey, This is a warning!
+2020-05-12 17:50:08.129 ERROR 25308 --- [main] c.u.S.SseApplication                     : Oops! We have an Error. OK
+2020-05-12 17:50:08.129 FATAL 25308 --- [main] c.u.S.SseApplication                     : Damn! Fatal error. Please fix me.
+2020-05-12 17:51:42.828  INFO 22996 --- [main] c.u.S.SseApplication                     : Starting SseApplication on DESKTOP-4OS45NN with PID 22996 (C:\Users\Olya\gitProjects\p8\SSE\SSE\target\classes started by Olya in C:\Users\Olya\gitProjects\p8\SSE\SSE)
+2020-05-12 17:51:42.843  INFO 22996 --- [main] c.u.S.SseApplication                     : No active profile set, falling back to default profiles: default
+2020-05-12 17:51:44.045  INFO 22996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 17:51:44.198  INFO 22996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140ms. Found 3 JPA repository interfaces.
+2020-05-12 17:51:44.708  INFO 22996 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-12 17:51:45.184  INFO 22996 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-05-12 17:51:45.217  INFO 22996 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-05-12 17:51:45.218  INFO 22996 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-12 17:51:45.721  INFO 22996 --- [main] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-12 17:51:45.741  INFO 22996 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-05-12 17:51:45.742 DEBUG 22996 --- [main] o.s.w.c.ContextLoader                    : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-12 17:51:45.742  INFO 22996 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2824 ms
+2020-05-12 17:51:46.022  INFO 22996 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 17:51:46.131  INFO 22996 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-12 17:51:46.335  INFO 22996 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 17:51:46.503  INFO 22996 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-05-12 17:51:47.018  INFO 22996 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-05-12 17:51:47.039  INFO 22996 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 17:51:48.275  INFO 22996 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 17:51:48.287  INFO 22996 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 17:51:48.401 DEBUG 22996 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2020-05-12 17:51:49.011  INFO 22996 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b189014d-709b-4323-9673-e2f1b95b7bab
+
+2020-05-12 17:51:49.144  INFO 22996 --- [main] o.s.s.w.a.c.ChannelProcessingFilter      : Validated configuration attributes
+2020-05-12 17:51:49.162  INFO 22996 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.access.channel.ChannelProcessingFilter@50628080, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@703a2bc9, org.springframework.security.web.context.SecurityContextPersistenceFilter@58041b11, org.springframework.security.web.header.HeaderWriterFilter@bb38c49, org.springframework.security.web.authentication.logout.LogoutFilter@4ddb9a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49222187, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15c3849f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@790d629a, org.springframework.security.web.session.SessionManagementFilter@6fbfd28b, org.springframework.security.web.access.ExceptionTranslationFilter@72015156, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25a2f432]
+2020-05-12 17:51:49.383  INFO 22996 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 17:51:49.399 DEBUG 22996 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-12 17:51:49.474 DEBUG 22996 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2020-05-12 17:51:49.483  INFO 22996 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-12 17:51:49.514 DEBUG 22996 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-12 17:51:49.528 DEBUG 22996 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-12 17:51:50.586  INFO 22996 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-05-12 17:51:50.590  INFO 22996 --- [main] c.u.S.SseApplication                     : Started SseApplication in 8.6 seconds (JVM running for 16.201)
+2020-05-12 17:51:50.593  INFO 22996 --- [main] c.u.S.SseApplication                     : Info log
+2020-05-12 17:51:50.593  WARN 22996 --- [main] c.u.S.SseApplication                     : Hey, This is a warning!
+2020-05-12 17:51:50.593 ERROR 22996 --- [main] c.u.S.SseApplication                     : Oops! We have an Error. OK
+2020-05-12 17:51:50.594 FATAL 22996 --- [main] c.u.S.SseApplication                     : Damn! Fatal error. Please fix me.
+2020-05-12 17:52:45.902  INFO 22996 --- [http-nio-8080-exec-6] o.a.c.h.Http11Processor                  : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:415) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+
+2020-05-12 17:52:45.909  INFO 22996 --- [http-nio-8080-exec-5] o.a.c.h.Http11Processor                  : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:415) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+
+2020-05-12 17:55:20.230  INFO 22540 --- [main] c.u.S.SseApplication                     : Starting SseApplication on DESKTOP-4OS45NN with PID 22540 (C:\Users\Olya\gitProjects\p8\SSE\SSE\target\classes started by Olya in C:\Users\Olya\gitProjects\p8\SSE\SSE)
+2020-05-12 17:55:20.246  INFO 22540 --- [main] c.u.S.SseApplication                     : No active profile set, falling back to default profiles: default
+2020-05-12 17:55:21.352  INFO 22540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 17:55:21.495  INFO 22540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131ms. Found 3 JPA repository interfaces.
+2020-05-12 17:55:21.999  INFO 22540 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-12 17:55:22.420  INFO 22540 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-05-12 17:55:22.453  INFO 22540 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-05-12 17:55:22.454  INFO 22540 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-12 17:55:22.966  INFO 22540 --- [main] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-12 17:55:22.986  INFO 22540 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-05-12 17:55:22.987 DEBUG 22540 --- [main] o.s.w.c.ContextLoader                    : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-12 17:55:22.987  INFO 22540 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2680 ms
+2020-05-12 17:55:23.271  INFO 22540 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 17:55:23.402  INFO 22540 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-12 17:55:23.620  INFO 22540 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 17:55:23.777  INFO 22540 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-05-12 17:55:24.311  INFO 22540 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-05-12 17:55:24.334  INFO 22540 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 17:55:25.569  INFO 22540 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 17:55:25.581  INFO 22540 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 17:55:25.687 DEBUG 22540 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2020-05-12 17:55:26.255  INFO 22540 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5eb1d7bb-315a-4b14-8690-b20af1a5cf2f
+
+2020-05-12 17:55:26.399  INFO 22540 --- [main] o.s.s.w.a.c.ChannelProcessingFilter      : Validated configuration attributes
+2020-05-12 17:55:26.423  INFO 22540 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.access.channel.ChannelProcessingFilter@ea45a5b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b17759c, org.springframework.security.web.context.SecurityContextPersistenceFilter@7eb774c3, org.springframework.security.web.header.HeaderWriterFilter@2a79da3a, org.springframework.security.web.authentication.logout.LogoutFilter@2627335c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a42145, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5464aeec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11cdf948, org.springframework.security.web.session.SessionManagementFilter@4ac77269, org.springframework.security.web.access.ExceptionTranslationFilter@2831c178, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a44993c]
+2020-05-12 17:55:26.714  INFO 22540 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 17:55:26.731 DEBUG 22540 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-12 17:55:26.811 DEBUG 22540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2020-05-12 17:55:26.821  INFO 22540 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-12 17:55:26.854 DEBUG 22540 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-12 17:55:26.867 DEBUG 22540 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-12 17:55:27.969  INFO 22540 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-05-12 17:55:27.972  INFO 22540 --- [main] c.u.S.SseApplication                     : Started SseApplication in 8.506 seconds (JVM running for 16.436)
+2020-05-12 17:55:27.975  INFO 22540 --- [main] c.u.S.SseApplication                     : Info log
+2020-05-12 17:55:27.975  WARN 22540 --- [main] c.u.S.SseApplication                     : Hey, This is a warning!
+2020-05-12 17:55:27.975 ERROR 22540 --- [main] c.u.S.SseApplication                     : Oops! We have an Error. OK
+2020-05-12 17:55:27.976 FATAL 22540 --- [main] c.u.S.SseApplication                     : Damn! Fatal error. Please fix me.
+2020-05-12 17:56:47.098  INFO 22540 --- [https-jsse-nio-8443-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-12 17:56:47.099  INFO 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-05-12 17:56:47.099 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2020-05-12 17:56:47.118 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-12 17:56:47.119  INFO 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed initialization in 20 ms
+2020-05-12 17:56:47.183 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /login, client=0:0:0:0:0:0:0:1]
+2020-05-12 17:56:47.187 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/login", parameters={}
+2020-05-12 17:56:47.193 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.LoginController#showLoginPage(ModelMap, HttpSession)
+2020-05-12 17:56:49.162  WARN 22540 --- [https-jsse-nio-8443-exec-3] o.a.c.u.SessionIdGeneratorBase           : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,936] milliseconds.
+2020-05-12 17:56:49.190 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 17:56:49.757 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:49.760 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:49.881 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:49.882 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min.css", parameters={}
+2020-05-12 17:56:49.889 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.059 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.060 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.063 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/select2/select2.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.064 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : GET "/vendor/select2/select2.min.css", parameters={}
+2020-05-12 17:56:50.065 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.080 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.081 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/select2/select2.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.092 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/font-awesome-4.7.0/css/font-awesome.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.092 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : GET "/fonts/font-awesome-4.7.0/css/font-awesome.min.css", parameters={}
+2020-05-12 17:56:50.099 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.116 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.117 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/font-awesome-4.7.0/css/font-awesome.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.131 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/animate/animate.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.131 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/vendor/animate/animate.css", parameters={}
+2020-05-12 17:56:50.132 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.146 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.147 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/animate/animate.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.151 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/css-hamburgers/hamburgers.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.151 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/vendor/css-hamburgers/hamburgers.min.css", parameters={}
+2020-05-12 17:56:50.152 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.164 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.165 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/css-hamburgers/hamburgers.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.167 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/util.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.167 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/css/util.css", parameters={}
+2020-05-12 17:56:50.168 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.203 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.203 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/util.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.215 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/main.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.216 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/css/main.css", parameters={}
+2020-05-12 17:56:50.217 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.235 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.235 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/main.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.241 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/jquery/jquery-3.2.1.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.241 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/vendor/jquery/jquery-3.2.1.min.js", parameters={}
+2020-05-12 17:56:50.242 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.259 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/js/popper.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.259 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/js/popper.js", parameters={}
+2020-05-12 17:56:50.260 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.290 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.290 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/jquery/jquery-3.2.1.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.302 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/js/bootstrap.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.302 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/js/bootstrap.min.js", parameters={}
+2020-05-12 17:56:50.303 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.316 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.320 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/js/popper.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.323 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/select2/select2.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.324 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/vendor/select2/select2.min.js", parameters={}
+2020-05-12 17:56:50.325 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.331 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.332 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/js/bootstrap.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.347 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/tilt/tilt.jquery.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.347 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/vendor/tilt/tilt.jquery.min.js", parameters={}
+2020-05-12 17:56:50.349 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.363 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.363 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /images/img-01.png, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.363 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/js/main.js", parameters={}
+2020-05-12 17:56:50.364 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.367 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-05-12 17:56:50.368 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 404 NOT_FOUND
+2020-05-12 17:56:50.368 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.363 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/images/img-01.png", parameters={}
+2020-05-12 17:56:50.370 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.376 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2020-05-12 17:56:50.378 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-05-12 17:56:50.385 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.386 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /images/img-01.png, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.391 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.392 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/tilt/tilt.jquery.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.390 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.392 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/select2/select2.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.436 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-12 17:56:50.437 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue May 12 17:56:50 EEST 2020, status=404, error=Not Found, message=No message available, (truncated)...]
+2020-05-12 17:56:50.568 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 404
+2020-05-12 17:56:50.588 DEBUG 22540 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.589 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Medium.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.589 DEBUG 22540 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Bold.ttf", parameters={}
+2020-05-12 17:56:50.589 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Medium.ttf", parameters={}
+2020-05-12 17:56:50.589 DEBUG 22540 --- [https-jsse-nio-8443-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.590 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.592 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.593 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0", parameters={masked}
+2020-05-12 17:56:50.593 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/montserrat/Montserrat-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.593 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/fonts/montserrat/Montserrat-Bold.ttf", parameters={}
+2020-05-12 17:56:50.596 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.597 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.646 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Regular.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.646 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Regular.ttf", parameters={}
+2020-05-12 17:56:50.647 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.715 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.716 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.724 DEBUG 22540 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.725 DEBUG 22540 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.733 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.734 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Medium.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.741 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.741 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Regular.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.769 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:56:50.769 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/montserrat/Montserrat-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.815 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.816 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/js/main.js", parameters={}
+2020-05-12 17:56:50.817 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.819 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-05-12 17:56:50.820 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 404 NOT_FOUND
+2020-05-12 17:56:50.820 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.821 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2020-05-12 17:56:50.822 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-05-12 17:56:50.823 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-12 17:56:50.824 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue May 12 17:56:50 EEST 2020, status=404, error=Not Found, message=No message available, (truncated)...]
+2020-05-12 17:56:50.826 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 404
+2020-05-12 17:56:50.898 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /favicon.ico, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.899 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/favicon.ico", parameters={}
+2020-05-12 17:56:50.901 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:56:50.908 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-05-12 17:56:50.908 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 404 NOT_FOUND
+2020-05-12 17:56:50.908 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /favicon.ico, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:56:50.909 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2020-05-12 17:56:50.911 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-05-12 17:56:50.914 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/webp, image/apng, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-12 17:56:50.914 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue May 12 17:56:50 EEST 2020, status=404, error=Not Found, message=No message available, (truncated)...]
+2020-05-12 17:56:50.919 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 404
+2020-05-12 17:57:50.487 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:57:50.488 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : POST "/login", parameters={masked}
+2020-05-12 17:57:50.489 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.LoginController#showWelcomePage(ModelMap, String, String, HttpSession, Students, Account)
+2020-05-12 17:57:50.518  INFO 22540 --- [https-jsse-nio-8443-exec-5] c.u.S.c.LoginController                  : just a test info log
+2020-05-12 17:57:50.675 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Failed to complete request: java.lang.IllegalArgumentException: Invalid salt
+2020-05-12 17:57:50.676 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100, payload=name=56252719&password=g5Yw5ASmAfID]
+2020-05-12 17:57:50.680 ERROR 22540 --- [https-jsse-nio-8443-exec-5] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Invalid salt] with root cause
+
+java.lang.IllegalArgumentException: Invalid salt
+	at org.springframework.security.crypto.bcrypt.BCrypt.hashpw(BCrypt.java:762) ~[spring-security-core-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.crypto.bcrypt.BCrypt.hashpw(BCrypt.java:737) ~[spring-security-core-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.crypto.bcrypt.BCrypt.checkpw(BCrypt.java:908) ~[spring-security-core-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at com.universitysys.SSE.service.LoginService.validateStudent(LoginService.java:31) ~[classes/:?]
+	at com.universitysys.SSE.controller.LoginController.showWelcomePage(LoginController.java:82) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:157) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:666) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+
+2020-05-12 17:57:50.694 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for POST "/error", parameters={masked}
+2020-05-12 17:57:50.697 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2020-05-12 17:57:50.721 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2020-05-12 17:57:50.726 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 500
+2020-05-12 17:57:52.717 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:57:52.718 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/login", parameters={}
+2020-05-12 17:57:52.718 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.LoginController#showLoginPage(ModelMap, HttpSession)
+2020-05-12 17:57:52.720 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 17:57:52.724 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:57:52.725 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:57:52.754 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:57:52.754 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/js/main.js", parameters={}
+2020-05-12 17:57:52.755 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:57:52.764 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-05-12 17:57:52.765 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 404 NOT_FOUND
+2020-05-12 17:57:52.765 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:57:52.766 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2020-05-12 17:57:52.767 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-05-12 17:57:52.771 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-12 17:57:52.772 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue May 12 17:57:52 EEST 2020, status=404, error=Not Found, message=No message available, (truncated)...]
+2020-05-12 17:57:52.774 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 404
+2020-05-12 17:57:56.274 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:57:56.274 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : POST "/login", parameters={masked}
+2020-05-12 17:57:56.275 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.LoginController#showWelcomePage(ModelMap, String, String, HttpSession, Students, Account)
+2020-05-12 17:57:56.279  INFO 22540 --- [https-jsse-nio-8443-exec-1] c.u.S.c.LoginController                  : just a test info log
+2020-05-12 17:57:56.283 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Failed to complete request: java.lang.IllegalArgumentException: Invalid salt
+2020-05-12 17:57:56.284 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100, payload=name=56252719&password=g5Yw5ASmAfID]
+2020-05-12 17:57:56.284 ERROR 22540 --- [https-jsse-nio-8443-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Invalid salt] with root cause
+
+java.lang.IllegalArgumentException: Invalid salt
+	at org.springframework.security.crypto.bcrypt.BCrypt.hashpw(BCrypt.java:762) ~[spring-security-core-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.crypto.bcrypt.BCrypt.hashpw(BCrypt.java:737) ~[spring-security-core-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.crypto.bcrypt.BCrypt.checkpw(BCrypt.java:908) ~[spring-security-core-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at com.universitysys.SSE.service.LoginService.validateStudent(LoginService.java:31) ~[classes/:?]
+	at com.universitysys.SSE.controller.LoginController.showWelcomePage(LoginController.java:82) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:157) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:666) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+
+2020-05-12 17:57:56.288 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for POST "/error", parameters={masked}
+2020-05-12 17:57:56.289 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2020-05-12 17:57:56.293 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2020-05-12 17:57:56.294 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 500
+2020-05-12 17:58:00.464 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.464 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/login", parameters={}
+2020-05-12 17:58:00.465 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.LoginController#showLoginPage(ModelMap, HttpSession)
+2020-05-12 17:58:00.466 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 17:58:00.469 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.469 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.503 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.503 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min.css", parameters={}
+2020-05-12 17:58:00.505 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.560 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.560 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.563 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/font-awesome-4.7.0/css/font-awesome.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.563 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/fonts/font-awesome-4.7.0/css/font-awesome.min.css", parameters={}
+2020-05-12 17:58:00.587 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.602 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.602 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/font-awesome-4.7.0/css/font-awesome.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.615 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/css-hamburgers/hamburgers.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.636 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/vendor/css-hamburgers/hamburgers.min.css", parameters={}
+2020-05-12 17:58:00.636 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.648 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.648 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/css-hamburgers/hamburgers.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.682 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/animate/animate.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.682 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/vendor/animate/animate.css", parameters={}
+2020-05-12 17:58:00.683 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.698 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.713 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/animate/animate.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.716 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/main.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.716 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/css/main.css", parameters={}
+2020-05-12 17:58:00.717 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.760 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.763 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/main.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.774 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/util.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.774 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/css/util.css", parameters={}
+2020-05-12 17:58:00.775 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.800 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.818 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/util.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.823 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/jquery/jquery-3.2.1.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.824 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/vendor/jquery/jquery-3.2.1.min.js", parameters={}
+2020-05-12 17:58:00.824 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.837 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/select2/select2.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.838 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/vendor/select2/select2.min.css", parameters={}
+2020-05-12 17:58:00.843 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.854 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.854 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/jquery/jquery-3.2.1.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.858 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.859 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/select2/select2.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.862 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/tilt/tilt.jquery.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.863 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/vendor/tilt/tilt.jquery.min.js", parameters={}
+2020-05-12 17:58:00.863 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.869 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/js/bootstrap.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.869 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/js/bootstrap.min.js", parameters={}
+2020-05-12 17:58:00.870 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.874 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/js/popper.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.875 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/js/popper.js", parameters={}
+2020-05-12 17:58:00.878 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.875 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.890 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/tilt/tilt.jquery.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.894 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.894 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/js/main.js", parameters={}
+2020-05-12 17:58:00.894 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.897 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-05-12 17:58:00.897 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 404 NOT_FOUND
+2020-05-12 17:58:00.897 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.898 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2020-05-12 17:58:00.898 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-05-12 17:58:00.899 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-12 17:58:00.900 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue May 12 17:58:00 EEST 2020, status=404, error=Not Found, message=No message available, (truncated)...]
+2020-05-12 17:58:00.912 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 404
+2020-05-12 17:58:00.914 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.915 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/js/popper.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.916 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.916 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Bold.ttf", parameters={}
+2020-05-12 17:58:00.917 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.927 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Medium.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.927 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Medium.ttf", parameters={}
+2020-05-12 17:58:00.928 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.932 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/select2/select2.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.932 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : GET "/vendor/select2/select2.min.js", parameters={}
+2020-05-12 17:58:00.932 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.937 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.937 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0", parameters={masked}
+2020-05-12 17:58:00.937 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.949 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.949 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/select2/select2.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.952 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.952 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/js/bootstrap.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.961 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Regular.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.962 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Regular.ttf", parameters={}
+2020-05-12 17:58:00.963 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.964 DEBUG 22540 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /images/img-01.png, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.964 DEBUG 22540 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : GET "/images/img-01.png", parameters={}
+2020-05-12 17:58:00.965 DEBUG 22540 --- [https-jsse-nio-8443-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.967 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/montserrat/Montserrat-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.967 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/fonts/montserrat/Montserrat-Bold.ttf", parameters={}
+2020-05-12 17:58:00.968 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:00.959 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.971 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:00.973 DEBUG 22540 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:00.973 DEBUG 22540 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /images/img-01.png, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:01.008 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:01.008 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:01.036 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:01.037 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Medium.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:01.051 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:01.051 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Regular.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:01.053 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:01.053 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/montserrat/Montserrat-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:01.078 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:01.078 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/js/main.js", parameters={}
+2020-05-12 17:58:01.079 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:01.082 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-05-12 17:58:01.082 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 404 NOT_FOUND
+2020-05-12 17:58:01.082 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:01.083 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2020-05-12 17:58:01.083 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-05-12 17:58:01.085 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-12 17:58:01.085 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue May 12 17:58:01 EEST 2020, status=404, error=Not Found, message=No message available, (truncated)...]
+2020-05-12 17:58:01.087 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 404
+2020-05-12 17:58:15.686 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:15.686 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : POST "/login", parameters={masked}
+2020-05-12 17:58:15.686 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.LoginController#showWelcomePage(ModelMap, String, String, HttpSession, Students, Account)
+2020-05-12 17:58:15.689  INFO 22540 --- [https-jsse-nio-8443-exec-4] c.u.S.c.LoginController                  : just a test info log
+2020-05-12 17:58:15.694 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Failed to complete request: java.lang.IllegalArgumentException: Invalid salt
+2020-05-12 17:58:15.694 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100, payload=name=56252719&password=g5Yw5ASmAfID]
+2020-05-12 17:58:15.695 ERROR 22540 --- [https-jsse-nio-8443-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Invalid salt] with root cause
+
+java.lang.IllegalArgumentException: Invalid salt
+	at org.springframework.security.crypto.bcrypt.BCrypt.hashpw(BCrypt.java:762) ~[spring-security-core-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.crypto.bcrypt.BCrypt.hashpw(BCrypt.java:737) ~[spring-security-core-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.crypto.bcrypt.BCrypt.checkpw(BCrypt.java:908) ~[spring-security-core-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at com.universitysys.SSE.service.LoginService.validateStudent(LoginService.java:31) ~[classes/:?]
+	at com.universitysys.SSE.controller.LoginController.showWelcomePage(LoginController.java:82) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:157) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:666) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+
+2020-05-12 17:58:15.697 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for POST "/error", parameters={masked}
+2020-05-12 17:58:15.698 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2020-05-12 17:58:15.701 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2020-05-12 17:58:15.701 DEBUG 22540 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 500
+2020-05-12 17:58:24.564 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.564 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/login", parameters={}
+2020-05-12 17:58:24.564 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.LoginController#showLoginPage(ModelMap, HttpSession)
+2020-05-12 17:58:24.565 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 17:58:24.568 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.569 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /login, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.597 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.597 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min.css", parameters={}
+2020-05-12 17:58:24.598 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.641 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.641 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.654 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/animate/animate.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.654 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/vendor/animate/animate.css", parameters={}
+2020-05-12 17:58:24.658 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.677 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.677 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/animate/animate.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.685 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/css-hamburgers/hamburgers.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.686 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/vendor/css-hamburgers/hamburgers.min.css", parameters={}
+2020-05-12 17:58:24.687 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.708 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.708 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/css-hamburgers/hamburgers.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.723 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/font-awesome-4.7.0/css/font-awesome.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.723 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/fonts/font-awesome-4.7.0/css/font-awesome.min.css", parameters={}
+2020-05-12 17:58:24.724 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.739 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.739 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/font-awesome-4.7.0/css/font-awesome.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.741 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/main.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.741 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/css/main.css", parameters={}
+2020-05-12 17:58:24.742 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.752 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.753 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/main.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.756 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/select2/select2.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.757 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/vendor/select2/select2.min.css", parameters={}
+2020-05-12 17:58:24.757 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.774 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.775 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/select2/select2.min.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.778 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/jquery/jquery-3.2.1.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.778 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/vendor/jquery/jquery-3.2.1.min.js", parameters={}
+2020-05-12 17:58:24.779 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.796 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/util.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.797 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/css/util.css", parameters={}
+2020-05-12 17:58:24.798 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.802 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.803 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/jquery/jquery-3.2.1.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.826 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/js/bootstrap.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.826 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/js/bootstrap.min.js", parameters={}
+2020-05-12 17:58:24.827 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.842 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.842 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/util.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.844 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/select2/select2.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.845 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/vendor/select2/select2.min.js", parameters={}
+2020-05-12 17:58:24.845 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.851 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.851 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/js/bootstrap.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.854 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/tilt/tilt.jquery.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.855 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/vendor/tilt/tilt.jquery.min.js", parameters={}
+2020-05-12 17:58:24.856 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.865 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.865 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/tilt/tilt.jquery.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.868 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/js/popper.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.868 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/js/popper.js", parameters={}
+2020-05-12 17:58:24.872 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.886 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.886 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/select2/select2.min.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.898 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.898 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/js/main.js", parameters={}
+2020-05-12 17:58:24.899 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.902 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-05-12 17:58:24.903 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 404 NOT_FOUND
+2020-05-12 17:58:24.904 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /images/img-01.png, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.903 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.906 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/images/img-01.png", parameters={}
+2020-05-12 17:58:24.907 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.907 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2020-05-12 17:58:24.907 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/js/popper.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.907 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-05-12 17:58:24.908 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.908 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-12 17:58:24.908 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue May 12 17:58:24 EEST 2020, status=404, error=Not Found, message=No message available, (truncated)...]
+2020-05-12 17:58:24.910 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 404
+2020-05-12 17:58:24.919 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.919 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /images/img-01.png, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.963 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.963 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Bold.ttf", parameters={}
+2020-05-12 17:58:24.963 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.964 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Medium.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.964 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Medium.ttf", parameters={}
+2020-05-12 17:58:24.965 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.968 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.968 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0", parameters={masked}
+2020-05-12 17:58:24.968 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.977 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/montserrat/Montserrat-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.977 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/fonts/montserrat/Montserrat-Bold.ttf", parameters={}
+2020-05-12 17:58:24.978 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.992 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Regular.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.992 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Regular.ttf", parameters={}
+2020-05-12 17:58:24.992 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:24.997 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.997 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:24.997 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Medium.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:24.997 DEBUG 22540 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:25.024 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:25.024 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Regular.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:25.039 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:25.039 DEBUG 22540 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:25.063 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:58:25.064 DEBUG 22540 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/montserrat/Montserrat-Bold.ttf, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:25.100 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:25.100 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/js/main.js", parameters={}
+2020-05-12 17:58:25.100 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:58:25.103 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-05-12 17:58:25.104 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 404 NOT_FOUND
+2020-05-12 17:58:25.104 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:58:25.105 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2020-05-12 17:58:25.105 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-05-12 17:58:25.106 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-12 17:58:25.107 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue May 12 17:58:25 EEST 2020, status=404, error=Not Found, message=No message available, (truncated)...]
+2020-05-12 17:58:25.108 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 404
+2020-05-12 17:59:09.580 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /statistics, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:09.580 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/statistics", parameters={}
+2020-05-12 17:59:09.580 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.StatisticController#messages()
+2020-05-12 17:59:09.599 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 17:59:09.632 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:09.633 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /statistics, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:09.658 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:09.658 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 17:59:09.658 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:59:09.718 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:09.719 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:09.753 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:09.754 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 17:59:09.756 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:59:09.768 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:09.769 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:09.771 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/save.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:09.771 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/js/save.js", parameters={}
+2020-05-12 17:59:09.772 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:59:09.782 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:09.782 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/save.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:09.785 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/stats.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:09.786 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/js/stats.js", parameters={}
+2020-05-12 17:59:09.786 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:59:09.794 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:09.795 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/stats.js, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:19.095 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /allmodules, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:19.095 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/allmodules", parameters={}
+2020-05-12 17:59:19.096 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.ModuleController#allModules()
+2020-05-12 17:59:19.130 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 17:59:19.159 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:19.159 DEBUG 22540 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /allmodules, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:19.230 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:19.230 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 17:59:19.231 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:59:19.300 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:19.300 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:19.302 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/allmodules.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:19.302 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/css/allmodules.css", parameters={}
+2020-05-12 17:59:19.303 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:59:19.316 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:19.317 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/allmodules.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:19.319 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:19.319 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 17:59:19.319 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:59:19.334 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:19.335 DEBUG 22540 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:27.429 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /welcome, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:27.429 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/welcome", parameters={}
+2020-05-12 17:59:27.429 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.LoginController#showWelcome()
+2020-05-12 17:59:27.431 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 17:59:27.442 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:27.442 DEBUG 22540 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /welcome, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:27.469 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:27.471 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 17:59:27.472 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:59:27.515 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:27.516 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:27.517 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:27.517 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 17:59:27.530 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:59:27.540 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:27.541 DEBUG 22540 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:27.555 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /images/img-03.jpg, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 17:59:27.555 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/images/img-03.jpg", parameters={}
+2020-05-12 17:59:27.556 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 17:59:27.725 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 17:59:27.725 DEBUG 22540 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /images/img-03.jpg, client=0:0:0:0:0:0:0:1, session=61902EF58BE3571D7445FD7D38F5A100]
+2020-05-12 18:57:14.696  WARN 22540 --- [HikariPool-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m19s966ms284µs100ns).
