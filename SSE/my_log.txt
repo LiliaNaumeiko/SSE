@@ -1670,3 +1670,434 @@ Using generated security password: 43ff58c9-84fa-4ff6-aef3-ef9f792ba801
 2020-05-12 22:46:07.880 DEBUG 12596 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
 2020-05-12 22:46:07.887 DEBUG 12596 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
 2020-05-12 22:46:07.887 DEBUG 12596 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:29.929  INFO 7308 --- [main] c.u.S.SseApplication                     : Starting SseApplication on DESKTOP-4OS45NN with PID 7308 (C:\Users\Olya\gitProjects\p8\SSE\SSE\target\classes started by Olya in C:\Users\Olya\gitProjects\p8\SSE\SSE)
+2020-05-12 22:48:29.943  INFO 7308 --- [main] c.u.S.SseApplication                     : No active profile set, falling back to default profiles: default
+2020-05-12 22:48:31.088  INFO 7308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 22:48:31.294  INFO 7308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 189ms. Found 3 JPA repository interfaces.
+2020-05-12 22:48:31.889  INFO 7308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-12 22:48:32.496  INFO 7308 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-05-12 22:48:32.536  INFO 7308 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-05-12 22:48:32.537  INFO 7308 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-12 22:48:33.087  INFO 7308 --- [main] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-12 22:48:33.114  INFO 7308 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-05-12 22:48:33.114 DEBUG 7308 --- [main] o.s.w.c.ContextLoader                    : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-12 22:48:33.115  INFO 7308 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3116 ms
+2020-05-12 22:48:33.501  INFO 7308 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 22:48:33.653  INFO 7308 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-12 22:48:33.913  INFO 7308 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 22:48:34.099  INFO 7308 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-05-12 22:48:34.831  INFO 7308 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-05-12 22:48:34.856  INFO 7308 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 22:48:36.185  INFO 7308 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 22:48:36.548  INFO 7308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 22:48:36.686 DEBUG 7308 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2020-05-12 22:48:37.473  INFO 7308 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 766d4b95-cd23-44ee-8a74-49f80c84e385
+
+2020-05-12 22:48:37.621  INFO 7308 --- [main] o.s.s.w.a.c.ChannelProcessingFilter      : Validated configuration attributes
+2020-05-12 22:48:37.640  INFO 7308 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.access.channel.ChannelProcessingFilter@7b0dfa91, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1361e880, org.springframework.security.web.context.SecurityContextPersistenceFilter@7135e8cd, org.springframework.security.web.header.HeaderWriterFilter@591ba330, org.springframework.security.web.authentication.logout.LogoutFilter@4ac77269, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5527dbb0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7263b0c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3506bc8b, org.springframework.security.web.session.SessionManagementFilter@3fda8dae, org.springframework.security.web.access.ExceptionTranslationFilter@9fc2f89, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@755009f2]
+2020-05-12 22:48:37.909  INFO 7308 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 22:48:37.928 DEBUG 7308 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-12 22:48:38.010 DEBUG 7308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2020-05-12 22:48:38.022  INFO 7308 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-12 22:48:38.055 DEBUG 7308 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-12 22:48:38.072 DEBUG 7308 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-12 22:48:39.336  INFO 7308 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-05-12 22:48:39.342  INFO 7308 --- [main] c.u.S.SseApplication                     : Started SseApplication in 10.19 seconds (JVM running for 17.299)
+2020-05-12 22:48:39.346  INFO 7308 --- [main] c.u.S.SseApplication                     : Info log
+2020-05-12 22:48:39.346  WARN 7308 --- [main] c.u.S.SseApplication                     : Hey, This is a warning!
+2020-05-12 22:48:39.347 ERROR 7308 --- [main] c.u.S.SseApplication                     : Oops! We have an Error. OK
+2020-05-12 22:48:39.347 FATAL 7308 --- [main] c.u.S.SseApplication                     : Damn! Fatal error. Please fix me.
+2020-05-12 22:48:42.469  INFO 7308 --- [https-jsse-nio-8443-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-12 22:48:42.470  INFO 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-05-12 22:48:42.471 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2020-05-12 22:48:42.489 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-12 22:48:42.490  INFO 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed initialization in 20 ms
+2020-05-12 22:48:42.547 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:42.551 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/statistics", parameters={}
+2020-05-12 22:48:42.559 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.StatisticController#messages()
+2020-05-12 22:48:42.610 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 22:48:43.173 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:43.176 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:43.217 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:43.217 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 22:48:43.228 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:43.248 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:48:43.248 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:43.261 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:43.262 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 22:48:43.263 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:43.269 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:48:43.269 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:43.277 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:43.278 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/js/stats.js", parameters={}
+2020-05-12 22:48:43.281 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:43.292 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:48:43.292 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:43.297 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:43.298 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/js/save.js", parameters={}
+2020-05-12 22:48:43.299 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:43.302 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:48:43.303 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:45.115 DEBUG 7308 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:45.115 DEBUG 7308 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/statistics", parameters={}
+2020-05-12 22:48:45.116 DEBUG 7308 --- [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.StatisticController#messages()
+2020-05-12 22:48:45.127 DEBUG 7308 --- [https-jsse-nio-8443-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 22:48:45.162 DEBUG 7308 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:45.162 DEBUG 7308 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:45.199 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:45.199 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 22:48:45.201 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:45.201 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 22:48:45.207 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:45.206 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:45.214 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:48:45.215 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:45.215 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:48:45.216 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:45.223 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:45.224 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/js/save.js", parameters={}
+2020-05-12 22:48:45.225 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:45.228 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:48:45.228 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:45.231 DEBUG 7308 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:45.231 DEBUG 7308 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/js/stats.js", parameters={}
+2020-05-12 22:48:45.232 DEBUG 7308 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:45.258 DEBUG 7308 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:48:45.258 DEBUG 7308 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:51.430 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /mymodules, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:48:51.431 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/mymodules", parameters={}
+2020-05-12 22:48:51.431 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.LoginController#myModules(ModelMap, HttpSession)
+2020-05-12 22:48:53.247  WARN 7308 --- [https-jsse-nio-8443-exec-9] o.a.c.u.SessionIdGeneratorBase           : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,800] milliseconds.
+2020-05-12 22:48:53.253 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 22:48:53.265 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.266 DEBUG 7308 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /mymodules, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.321 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.322 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min.css", parameters={}
+2020-05-12 22:48:53.341 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.415 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.415 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.422 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/animate/animate.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.423 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/vendor/animate/animate.css", parameters={}
+2020-05-12 22:48:53.424 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.444 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.444 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/animate/animate.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.447 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/util.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.447 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/css/util.css", parameters={}
+2020-05-12 22:48:53.448 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.497 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.498 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/util.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.537 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/font-awesome-4.7.0/css/font-awesome.min.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.538 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/fonts/font-awesome-4.7.0/css/font-awesome.min.css", parameters={}
+2020-05-12 22:48:53.540 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.560 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.561 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/font-awesome-4.7.0/css/font-awesome.min.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.567 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/main.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.567 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/css/main.css", parameters={}
+2020-05-12 22:48:53.572 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.594 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.594 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/main.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.604 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/css-hamburgers/hamburgers.min.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.605 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/vendor/css-hamburgers/hamburgers.min.css", parameters={}
+2020-05-12 22:48:53.606 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.648 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.649 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/css-hamburgers/hamburgers.min.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.652 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/select2/select2.min.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.653 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/vendor/select2/select2.min.css", parameters={}
+2020-05-12 22:48:53.654 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.673 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.674 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/select2/select2.min.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.680 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/js/bootstrap.min.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.680 DEBUG 7308 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/jquery/jquery-3.2.1.min.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.680 DEBUG 7308 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : GET "/vendor/jquery/jquery-3.2.1.min.js", parameters={}
+2020-05-12 22:48:53.681 DEBUG 7308 --- [https-jsse-nio-8443-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.680 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/js/bootstrap.min.js", parameters={}
+2020-05-12 22:48:53.688 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.696 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/js/popper.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.696 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/js/popper.js", parameters={}
+2020-05-12 22:48:53.697 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.700 DEBUG 7308 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/select2/select2.min.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.710 DEBUG 7308 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/vendor/select2/select2.min.js", parameters={}
+2020-05-12 22:48:53.710 DEBUG 7308 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.734 DEBUG 7308 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.735 DEBUG 7308 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/jquery/jquery-3.2.1.min.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.735 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.735 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/js/bootstrap.min.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.739 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.739 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : GET "/js/main.js", parameters={}
+2020-05-12 22:48:53.739 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/tilt/tilt.jquery.min.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.739 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/vendor/tilt/tilt.jquery.min.js", parameters={}
+2020-05-12 22:48:53.740 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.740 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.745 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.746 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/js/popper.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.753 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-05-12 22:48:53.754 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.754 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/tilt/tilt.jquery.min.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.754 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Completed 404 NOT_FOUND
+2020-05-12 22:48:53.754 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/main.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.759 DEBUG 7308 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.759 DEBUG 7308 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/select2/select2.min.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.764 DEBUG 7308 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /images/img-01.png, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.764 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2020-05-12 22:48:53.764 DEBUG 7308 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/images/img-01.png", parameters={}
+2020-05-12 22:48:53.765 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-05-12 22:48:53.766 DEBUG 7308 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.777 DEBUG 7308 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.777 DEBUG 7308 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /images/img-01.png, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.809 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-12 22:48:53.810 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue May 12 22:48:53 EEST 2020, status=404, error=Not Found, message=No message available, (truncated)...]
+2020-05-12 22:48:53.860 DEBUG 7308 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Bold.ttf, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.860 DEBUG 7308 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Bold.ttf", parameters={}
+2020-05-12 22:48:53.861 DEBUG 7308 --- [https-jsse-nio-8443-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.871 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Medium.ttf, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.872 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Medium.ttf", parameters={}
+2020-05-12 22:48:53.873 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.874 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.875 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : GET "/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0", parameters={masked}
+2020-05-12 22:48:53.876 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.877 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/montserrat/Montserrat-Bold.ttf, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.877 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/fonts/montserrat/Montserrat-Bold.ttf", parameters={}
+2020-05-12 22:48:53.878 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.938 DEBUG 7308 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.938 DEBUG 7308 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Bold.ttf, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.945 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.946 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.965 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /fonts/poppins/Poppins-Regular.ttf, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:53.965 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/fonts/poppins/Poppins-Regular.ttf", parameters={}
+2020-05-12 22:48:53.966 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:48:53.973 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:53.974 DEBUG 7308 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Medium.ttf, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:54.011 DEBUG 7308 --- [https-jsse-nio-8443-exec-3] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 404
+2020-05-12 22:48:54.010 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:54.012 DEBUG 7308 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/montserrat/Montserrat-Bold.ttf, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:48:54.021 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:48:54.022 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /fonts/poppins/Poppins-Regular.ttf, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:49:08.607 DEBUG 7308 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /statistics, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:49:08.608 DEBUG 7308 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : GET "/statistics", parameters={}
+2020-05-12 22:49:08.608 DEBUG 7308 --- [https-jsse-nio-8443-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.StatisticController#messages()
+2020-05-12 22:49:08.613 DEBUG 7308 --- [https-jsse-nio-8443-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 22:49:08.628 DEBUG 7308 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:49:08.628 DEBUG 7308 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /statistics, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:49:08.674 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:49:08.675 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 22:49:08.676 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:49:08.725 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:49:08.754 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:49:08.757 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:49:08.757 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 22:49:08.758 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:49:08.774 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:49:08.774 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:49:08.777 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/stats.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:49:08.777 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/js/stats.js", parameters={}
+2020-05-12 22:49:08.777 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:49:08.788 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:49:08.788 DEBUG 7308 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/stats.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:49:08.793 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/save.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:49:08.793 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : GET "/js/save.js", parameters={}
+2020-05-12 22:49:08.794 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:49:08.802 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:49:08.802 DEBUG 7308 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/save.js, client=0:0:0:0:0:0:0:1, session=75C1A58F66E2B96F3428936BCBE848F2]
+2020-05-12 22:52:00.241  INFO 25316 --- [main] c.u.S.SseApplication                     : Starting SseApplication on DESKTOP-4OS45NN with PID 25316 (C:\Users\Olya\gitProjects\p8\SSE\SSE\target\classes started by Olya in C:\Users\Olya\gitProjects\p8\SSE\SSE)
+2020-05-12 22:52:00.254  INFO 25316 --- [main] c.u.S.SseApplication                     : No active profile set, falling back to default profiles: default
+2020-05-12 22:52:01.311  INFO 25316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 22:52:01.447  INFO 25316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122ms. Found 3 JPA repository interfaces.
+2020-05-12 22:52:01.919  INFO 25316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-12 22:52:02.343  INFO 25316 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-05-12 22:52:02.376  INFO 25316 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-05-12 22:52:02.377  INFO 25316 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-12 22:52:02.886  INFO 25316 --- [main] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-12 22:52:02.906  INFO 25316 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-05-12 22:52:02.906 DEBUG 25316 --- [main] o.s.w.c.ContextLoader                    : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-12 22:52:02.906  INFO 25316 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2596 ms
+2020-05-12 22:52:03.189  INFO 25316 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 22:52:03.289  INFO 25316 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-12 22:52:03.463  INFO 25316 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 22:52:03.605  INFO 25316 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-05-12 22:52:04.055  INFO 25316 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-05-12 22:52:04.076  INFO 25316 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 22:52:05.252  INFO 25316 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 22:52:05.267  INFO 25316 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 22:52:05.361 DEBUG 25316 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2020-05-12 22:52:05.884  INFO 25316 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e0a6fd2d-1fe8-4ea4-a512-b27c22004ba5
+
+2020-05-12 22:52:06.010  INFO 25316 --- [main] o.s.s.w.a.c.ChannelProcessingFilter      : Validated configuration attributes
+2020-05-12 22:52:06.026  INFO 25316 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.access.channel.ChannelProcessingFilter@58189b85, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f8d4b51, org.springframework.security.web.context.SecurityContextPersistenceFilter@72ce8a9b, org.springframework.security.web.header.HeaderWriterFilter@29d81c22, org.springframework.security.web.authentication.logout.LogoutFilter@6b2efcae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9fc2f89, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f651ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55821edf, org.springframework.security.web.session.SessionManagementFilter@54b35809, org.springframework.security.web.access.ExceptionTranslationFilter@1e75af65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@458b4487]
+2020-05-12 22:52:06.246  INFO 25316 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 22:52:06.260 DEBUG 25316 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-12 22:52:06.335 DEBUG 25316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2020-05-12 22:52:06.342  INFO 25316 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-12 22:52:06.371 DEBUG 25316 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-12 22:52:06.383 DEBUG 25316 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-12 22:52:07.324  INFO 25316 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-05-12 22:52:07.327  INFO 25316 --- [main] c.u.S.SseApplication                     : Started SseApplication in 7.847 seconds (JVM running for 14.423)
+2020-05-12 22:52:07.329  INFO 25316 --- [main] c.u.S.SseApplication                     : Info log
+2020-05-12 22:52:07.329  WARN 25316 --- [main] c.u.S.SseApplication                     : Hey, This is a warning!
+2020-05-12 22:52:07.330 ERROR 25316 --- [main] c.u.S.SseApplication                     : Oops! We have an Error. OK
+2020-05-12 22:52:07.330 FATAL 25316 --- [main] c.u.S.SseApplication                     : Damn! Fatal error. Please fix me.
+2020-05-12 22:52:12.593  INFO 25316 --- [https-jsse-nio-8443-exec-4] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-12 22:52:12.594  INFO 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-05-12 22:52:12.594 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2020-05-12 22:52:12.606 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-12 22:52:12.606  INFO 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed initialization in 12 ms
+2020-05-12 22:52:12.643 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:52:12.646 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : GET "/statistics", parameters={}
+2020-05-12 22:52:12.650 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.StatisticController#messages()
+2020-05-12 22:52:12.689 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 22:52:13.235 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:52:13.238 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:52:13.275 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:52:13.276 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 22:52:13.282 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:52:13.364 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:52:13.365 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:52:13.370 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:52:13.379 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 22:52:13.388 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:52:13.403 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:52:13.407 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:52:13.437 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:52:13.438 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : GET "/js/save.js", parameters={}
+2020-05-12 22:52:13.444 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:52:13.444 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/js/stats.js", parameters={}
+2020-05-12 22:52:13.445 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:52:13.445 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:52:13.456 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:52:13.456 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:52:13.460 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:52:13.460 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:18.424 DEBUG 25316 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:18.424 DEBUG 25316 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/statistics", parameters={}
+2020-05-12 22:54:18.425 DEBUG 25316 --- [https-jsse-nio-8443-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.StatisticController#messages()
+2020-05-12 22:54:18.431 DEBUG 25316 --- [https-jsse-nio-8443-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 22:54:18.465 DEBUG 25316 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:54:18.466 DEBUG 25316 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:18.511 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:18.512 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 22:54:18.513 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:18.588 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:54:18.589 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:18.592 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:18.592 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 22:54:18.593 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:18.609 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:54:18.610 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:18.613 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:18.613 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : GET "/js/save.js", parameters={}
+2020-05-12 22:54:18.615 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:18.633 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:18.633 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:18.645 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:18.645 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : GET "/js/stats.js", parameters={}
+2020-05-12 22:54:18.646 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:18.652 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:18.653 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:25.655 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:25.655 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/statistics", parameters={}
+2020-05-12 22:54:25.656 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.StatisticController#messages()
+2020-05-12 22:54:25.661 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 22:54:25.679 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:54:25.679 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:25.717 DEBUG 25316 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:25.718 DEBUG 25316 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 22:54:25.724 DEBUG 25316 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:25.731 DEBUG 25316 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:25.731 DEBUG 25316 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:25.742 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:25.742 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 22:54:25.743 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:25.747 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:25.747 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:25.753 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:25.753 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/js/save.js", parameters={}
+2020-05-12 22:54:25.754 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:25.758 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:25.758 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:25.774 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:25.774 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/js/stats.js", parameters={}
+2020-05-12 22:54:25.775 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:25.778 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:25.779 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:26.954 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:26.954 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/statistics", parameters={}
+2020-05-12 22:54:26.955 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.StatisticController#messages()
+2020-05-12 22:54:26.962 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 22:54:26.974 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:54:26.974 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:27.000 DEBUG 25316 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:27.000 DEBUG 25316 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 22:54:27.001 DEBUG 25316 --- [https-jsse-nio-8443-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:27.006 DEBUG 25316 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:27.006 DEBUG 25316 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 22:54:27.007 DEBUG 25316 --- [https-jsse-nio-8443-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:27.010 DEBUG 25316 --- [https-jsse-nio-8443-exec-1] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:27.011 DEBUG 25316 --- [https-jsse-nio-8443-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:27.014 DEBUG 25316 --- [https-jsse-nio-8443-exec-5] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:27.014 DEBUG 25316 --- [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:27.018 DEBUG 25316 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:27.019 DEBUG 25316 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : GET "/js/save.js", parameters={}
+2020-05-12 22:54:27.020 DEBUG 25316 --- [https-jsse-nio-8443-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:27.020 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:27.021 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : GET "/js/stats.js", parameters={}
+2020-05-12 22:54:27.022 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:27.025 DEBUG 25316 --- [https-jsse-nio-8443-exec-10] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:27.025 DEBUG 25316 --- [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:27.026 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:27.028 DEBUG 25316 --- [https-jsse-nio-8443-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:28.759 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:28.759 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/statistics", parameters={}
+2020-05-12 22:54:28.760 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.StatisticController#messages()
+2020-05-12 22:54:28.768 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 22:54:28.777 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 22:54:28.777 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:28.974 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:28.975 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 22:54:28.976 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:28.976 DEBUG 25316 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:28.977 DEBUG 25316 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 22:54:28.978 DEBUG 25316 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:28.979 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:28.980 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:28.987 DEBUG 25316 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:28.987 DEBUG 25316 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:28.992 DEBUG 25316 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:28.992 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:28.992 DEBUG 25316 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : GET "/js/save.js", parameters={}
+2020-05-12 22:54:28.993 DEBUG 25316 --- [https-jsse-nio-8443-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:28.994 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/js/stats.js", parameters={}
+2020-05-12 22:54:28.996 DEBUG 25316 --- [https-jsse-nio-8443-exec-9] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:28.996 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 22:54:28.996 DEBUG 25316 --- [https-jsse-nio-8443-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 22:54:29.004 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 22:54:29.005 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 23:43:47.093 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 23:43:47.094 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : GET "/statistics", parameters={}
+2020-05-12 23:43:47.095 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.universitysys.SSE.controller.StatisticController#messages()
+2020-05-12 23:43:47.103 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-05-12 23:43:47.116 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2020-05-12 23:43:47.117 DEBUG 25316 --- [https-jsse-nio-8443-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /statistics, client=0:0:0:0:0:0:0:1]
+2020-05-12 23:43:47.211 DEBUG 25316 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 23:43:47.211 DEBUG 25316 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : GET "/vendor/bootstrap/css/bootstrap.min1.css", parameters={}
+2020-05-12 23:43:47.212 DEBUG 25316 --- [https-jsse-nio-8443-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 23:43:47.216 DEBUG 25316 --- [https-jsse-nio-8443-exec-2] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 23:43:47.216 DEBUG 25316 --- [https-jsse-nio-8443-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /vendor/bootstrap/css/bootstrap.min1.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 23:43:47.222 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 23:43:47.223 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : GET "/css/mainwelcome.css", parameters={}
+2020-05-12 23:43:47.226 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 23:43:47.231 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 23:43:47.231 DEBUG 25316 --- [https-jsse-nio-8443-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /css/mainwelcome.css, client=0:0:0:0:0:0:0:1]
+2020-05-12 23:43:47.241 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 23:43:47.243 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/js/save.js", parameters={}
+2020-05-12 23:43:47.244 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 23:43:47.248 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 23:43:47.249 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/save.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 23:43:47.253 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 23:43:47.254 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : GET "/js/stats.js", parameters={}
+2020-05-12 23:43:47.255 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-12 23:43:47.259 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.s.DispatcherServlet                : Completed 304 NOT_MODIFIED
+2020-05-12 23:43:47.266 DEBUG 25316 --- [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /js/stats.js, client=0:0:0:0:0:0:0:1]
+2020-05-12 23:43:51.182  WARN 25316 --- [HikariPool-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48m47s29ms117µs700ns).

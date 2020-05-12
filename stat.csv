@@ -1,5 +1,5 @@
 Name,Surname,Sex,Nationality,Date of birth
-Joseph    ,Freeman     ,male,English,2000/07/05
+Joseph,Freeman,male,English,2000/07/05
 Genette,Rennell,female,Native American,2000/07/22
 Delilah,Strange,female,Native American,1998/05/02
 Ron,Causey,male,Native American,1998/06/03
@@ -9,7 +9,7 @@ Wisdom,Bates,male,African,2001/09/21
 Raymond,Durand,male,France,2000/08/08
 Braylon,Garbutt,male,English,2000/07/11
 Benjamin,Auteberry,male,English,2002/04/10
-Kate,Lindsey,female,English ,1995/05/08
+Kate,Lindsey,female,English,1995/05/08
 Oira,Plank,female,African,1998/12/28
 Tamma,Courtenay,female,Canada,1995/02/21
 Israel,Laughtisse,male,Native American,1996/03/06
@@ -25,7 +25,7 @@ Cariotta,Choldcroft,female,Italian,1996/04/27
 Mona,Avison,female,English,1994/02/18
 Cobby,Minchella,male,China,2000/08/04
 Yoko,Simmank,male,China,1995/12/16
-Porter ,Laver,male,Native American,1999/02/11
+Porter,Laver,male,Native American,1999/02/11
 Anderson,Duthie,male,Poland,1998/02/04
 Aldon,Yendall,male,China,1999/01/08
 Kimberley,Budd,male,China,1990/04/29
