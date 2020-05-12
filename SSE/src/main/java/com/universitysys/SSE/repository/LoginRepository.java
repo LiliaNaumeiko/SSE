@@ -21,5 +21,7 @@ public interface LoginRepository extends JpaRepository<Students,Long> {
     String findSurnameName(Integer id);
     @Query(value = "SELECT name from student where id = ?1", nativeQuery = true)
     String findName(Integer id);
+    @Query(value = "SELECT password from account where username = ?1", nativeQuery = true)
+    String findPasswordbyName(String name);
 
 }

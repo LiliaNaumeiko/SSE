@@ -6,6 +6,8 @@ import com.universitysys.SSE.model.Students;
 import com.universitysys.SSE.repository.LoginRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.crypto.bcrypt.BCrypt;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,17 +27,23 @@ public class LoginService {
     @Autowired
     LoginRepository repository;
 
-    public boolean validateStudent(String username, String password) {
-        String sql = "select * from account where BINARY username REGEXP '" + username + "' and BINARY password REGEXP '" + password
-                + "'";
+    public boolean validateStudent(Account account,  String hash_password) {
+        Boolean pw_hash = BCrypt.checkpw(account.getPassword(), hash_password);
+        if (pw_hash ){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean validateUsername( String username ) {
+
+        String sql = "select * from account where username = '" + username +"' ;";
         List<Account> users = jdbcTemplate.query(sql, new UserMapper());
         if (users.size() > 0 ){
             return true;
         }
         return false;
     }
-
-    public List<Students> getStudentById(int id) {return repository.findById(id);}
 
     class UserMapper implements RowMapper<Account> {
         public Account  mapRow(ResultSet rs, int arg1) throws SQLException {
@@ -47,9 +55,11 @@ public class LoginService {
     }
     public void registerAccount(Account account){
         String sql1 = "select * from account";
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12); // Strength set as 12
         List<Account> users = jdbcTemplate.query(sql1, new UserMapper());
         String sql = "insert into account values(?,?,?,?,?)";
-        jdbcTemplate.update(sql, new Object[] {account.getUsername(), account.getPassword(), users.size()+1, 0, users.size()+1});
+        System.out.print("in reg AC" + account.getPassword());
+        jdbcTemplate.update(sql, new Object[] {account.getUsername(), encoder.encode(account.getPassword()), users.size()+1, 0, users.size()+1});
     }
 
     public void payAccount(Students student){

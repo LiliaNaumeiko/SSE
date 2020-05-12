@@ -7,7 +7,10 @@ import com.universitysys.SSE.repository.ModuleRepository;
 import com.universitysys.SSE.service.HasModuleService;
 import com.universitysys.SSE.service.ModuleService;
 import com.universitysys.SSE.service.RegisterService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 
 import org.springframework.ui.ModelMap;
@@ -26,7 +29,7 @@ import java.util.concurrent.SynchronousQueue;
 @Controller
 @SessionAttributes("name")
 public class LoginController {
-
+    private static final Logger logger =   LoggerFactory.getLogger( LoginController.class);
     @Autowired
     LoginService service;
     @Autowired
@@ -71,9 +74,10 @@ public class LoginController {
     }
 
     @RequestMapping(value={"/login", "/"}, method = RequestMethod.POST)
-    public String showWelcomePage(ModelMap model, @RequestParam String name, @RequestParam String password, HttpSession session, @ModelAttribute Students student){
-
-        boolean isValidStudent = service.validateStudent(name, password);
+    public String showWelcomePage(ModelMap model, @RequestParam String name, @RequestParam String password, HttpSession session, @ModelAttribute Students student, Account account){
+        logger.info("just a test info log");
+        String hash_password = repository.findPasswordbyName(name);
+        boolean isValidStudent = service.validateStudent(account , hash_password);
 
         if (!isValidStudent) {
             model.addAttribute("errorMessage", "Error: Invalid Credentials");
@@ -148,7 +152,6 @@ public class LoginController {
     }
     @RequestMapping(value = "mymodules" , method = RequestMethod.GET)
     public ModelAndView myModules(ModelMap model, HttpSession session) {
-        // mod.addObject("modules",  moduleService.showInfo());
         ModelAndView mod = new ModelAndView("mymodules");
         if (session.getAttribute("student_user") != null) {
         System.out.println("MyModG");
@@ -157,9 +160,6 @@ public class LoginController {
         System.out.println(findId);
         System.out.print(moduleRepository.findMyID(findId));
         Integer id[] = moduleRepository.findMyID(findId);
-        //f/or (int i = 0; i < id.length; i++)
-            //System.out.print(moduleService.findMyModule(id[i]));
-        //System.out.print(moduleRepository.findMyModule(id));
         String sent = null;
         if (id.length > 0)
             sent = " " + "id = " + id[0];

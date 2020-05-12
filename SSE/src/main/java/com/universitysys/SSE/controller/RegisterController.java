@@ -5,6 +5,7 @@ import com.universitysys.SSE.model.Students;
 import com.universitysys.SSE.service.LoginService;
 import com.universitysys.SSE.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +31,8 @@ public class RegisterController {
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response,
         @ModelAttribute("students") Students students,@ModelAttribute("account")Account account, @RequestParam String name, @RequestParam String password) {
-        boolean isValidStudent =loginService.validateStudent(name, password);
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
+        boolean isValidStudent =loginService.validateUsername(  name );
         if (!isValidStudent) {
             service.registerStudent(students);
             loginService.registerAccount(account);
