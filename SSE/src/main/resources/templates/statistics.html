@@ -20,6 +20,7 @@
 			<li role="presentation" ><a href="/payment"  th:href="@{/payment}">My Payments</a></li>
 			<li role="presentation" th:align="right" style="position:absolute;top:0;right:0;"><a href="/logout" th:href="@{/logout}">Log out</a></li>
 		</ul>
+		<div id="vis" align="center"></div>
 		<table border="1" cellpadding="5" id="dataTable" >
 			<caption><h2>Statistics</h2></caption>
 			<thead>
@@ -40,7 +41,6 @@
 			</tr>
 		</table>
 		<div><button id="btnExportToCsv" type="button" class="button" align="center">Export current stat to csv format</button></div>
-		<div id="vis" align="center"></div><br/>
 		<script>
 			const dataTable = document.getElementById("dataTable");
 			const btnExportToCsv = document.getElementById("btnExportToCsv");

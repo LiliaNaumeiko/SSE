@@ -10,7 +10,7 @@
     "transform": [
       {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"}
     ],
-    "width": 200,
+    "width": 100,
     "height": 500,
     "title": {
       "text": "Nationality",
