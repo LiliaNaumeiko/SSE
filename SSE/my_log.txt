@@ -37,3 +37,46 @@ Using generated security password: 934cd33f-51a7-49f5-b0bd-18c5a118649e
 2020-05-12 17:14:08.507  WARN 24753 --- [main] c.u.S.SseApplication                     : Hey, This is a warning!
 2020-05-12 17:14:08.507 ERROR 24753 --- [main] c.u.S.SseApplication                     : Oops! We have an Error. OK
 2020-05-12 17:14:08.507 FATAL 24753 --- [main] c.u.S.SseApplication                     : Damn! Fatal error. Please fix me.
+2020-05-12 17:24:17.768  INFO 24753 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 17:24:17.772  INFO 24753 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 17:24:17.774  INFO 24753 --- [SpringContextShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-05-12 17:24:17.777  INFO 24753 --- [SpringContextShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-05-12 17:24:23.664  INFO 25340 --- [main] c.u.S.SseApplication                     : Starting SseApplication on liliia-Vostro-15-3568 with PID 25340 (/home/liliia/Downloads/SecSoftEngineering/SecSoftEng-master/SSE/target/classes started by liliia in /home/liliia/Downloads/SecSoftEngineering/SecSoftEng-master/SSE)
+2020-05-12 17:24:23.680  INFO 25340 --- [main] c.u.S.SseApplication                     : No active profile set, falling back to default profiles: default
+2020-05-12 17:24:24.400  INFO 25340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 17:24:24.467  INFO 25340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 3 JPA repository interfaces.
+2020-05-12 17:24:24.736  INFO 25340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-12 17:24:24.938  INFO 25340 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-05-12 17:24:24.952  INFO 25340 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-05-12 17:24:24.952  INFO 25340 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-12 17:24:25.174  INFO 25340 --- [main] o.a.j.s.TldScanner                       : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-12 17:24:25.177  INFO 25340 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-05-12 17:24:25.178 DEBUG 25340 --- [main] o.s.w.c.ContextLoader                    : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-12 17:24:25.178  INFO 25340 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1433 ms
+2020-05-12 17:24:25.380  INFO 25340 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 17:24:25.421  INFO 25340 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-12 17:24:25.495  INFO 25340 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 17:24:25.555  INFO 25340 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-05-12 17:24:25.767  INFO 25340 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-05-12 17:24:25.776  INFO 25340 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 17:24:26.285  INFO 25340 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 17:24:26.289  INFO 25340 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 17:24:26.341 DEBUG 25340 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2020-05-12 17:24:26.623  INFO 25340 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: affbd53a-7985-4503-9850-27954582bbff
+
+2020-05-12 17:24:26.683  INFO 25340 --- [main] o.s.s.w.a.c.ChannelProcessingFilter      : Validated configuration attributes
+2020-05-12 17:24:26.693  INFO 25340 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.access.channel.ChannelProcessingFilter@9d99851, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51af8049, org.springframework.security.web.context.SecurityContextPersistenceFilter@49cb5030, org.springframework.security.web.header.HeaderWriterFilter@4586a8aa, org.springframework.security.web.authentication.logout.LogoutFilter@286866cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30fbc23, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44384b4a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@376af784, org.springframework.security.web.session.SessionManagementFilter@12365bd8, org.springframework.security.web.access.ExceptionTranslationFilter@1d8e9d3e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1426370c]
+2020-05-12 17:24:26.805  INFO 25340 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 17:24:26.813 DEBUG 25340 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-12 17:24:26.855 DEBUG 25340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2020-05-12 17:24:26.858  INFO 25340 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-12 17:24:26.885 DEBUG 25340 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-12 17:24:26.893 DEBUG 25340 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-12 17:24:27.478  INFO 25340 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-05-12 17:24:27.479  INFO 25340 --- [main] c.u.S.SseApplication                     : Started SseApplication in 4.67 seconds (JVM running for 5.549)
+2020-05-12 17:24:27.481  INFO 25340 --- [main] c.u.S.SseApplication                     : Info log
+2020-05-12 17:24:27.481  WARN 25340 --- [main] c.u.S.SseApplication                     : Hey, This is a warning!
+2020-05-12 17:24:27.481 ERROR 25340 --- [main] c.u.S.SseApplication                     : Oops! We have an Error. OK
+2020-05-12 17:24:27.481 FATAL 25340 --- [main] c.u.S.SseApplication                     : Damn! Fatal error. Please fix me.
