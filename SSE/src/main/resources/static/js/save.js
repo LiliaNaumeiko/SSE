@@ -1,33 +1,48 @@
 
+class TableCSVExporter {
+    constructor (table, includeHeaders = true) {
+        this.table = table;
+        this.rows = Array.from(table.querySelectorAll("tr"));
 
-function exportTableToExcel(tableID){
-    let filename = 'static/';
-    let downloadLink;
-    let dataType = 'application/vnd.ms-excel';
-    let tableSelect = document.getElementById("tblData");
-    let tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
-    
-    // Specify file name
-    filename = filename?filename+'.xls':'excel_data.xls';
-    
-    // Create download link element
-    downloadLink = document.createElement("a");
-    
-    document.body.appendChild(downloadLink);
-    
-    if(navigator.msSaveOrOpenBlob){
-        let blob = new Blob(['\ufeff', tableHTML], {
-            type: dataType
-        });
-        navigator.msSaveOrOpenBlob( blob, filename);
-    }else{
-        // Create a link to the file
-        downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
-    
-        // Setting the file name
-        downloadLink.download = filename;
-        
-        //triggering the function
-        downloadLink.click();
+        if (!includeHeaders && this.rows[0].querySelectorAll("th").length) {
+            this.rows.shift();
+        }
+    }
+
+    convertToCSV () {
+        const lines = [];
+        const numCols = this._findLongestRowLength();
+
+        for (const row of this.rows) {
+            let line = "";
+
+            for (let i = 0; i < numCols; i++) {
+                if (row.children[i] !== undefined) {
+                    line += TableCSVExporter.parseCell(row.children[i]);
+                }
+
+                line += (i !== (numCols - 1)) ? "," : "";
+            }
+
+            lines.push(line);
+        }
+
+        return lines.join("\n");
+    }
+
+    _findLongestRowLength () {
+        return this.rows.reduce((l, row) => row.childElementCount > l ? row.childElementCount : l, 0);
+    }
+
+    static parseCell (tableCell) {
+        let parsedValue = tableCell.textContent;
+
+        // Replace all double quotes with two double quotes
+        parsedValue = parsedValue.replace(/"/g, `""`);
+
+        // If value contains comma, new-line or double-quote, enclose in double quotes
+        parsedValue = /[",\n]/.test(parsedValue) ? `"${parsedValue}"` : parsedValue;
+
+        return parsedValue;
     }
 }
