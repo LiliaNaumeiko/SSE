@@ -77,16 +77,19 @@ public class LoginController {
 
     @RequestMapping(value={"/login", "/"}, method = RequestMethod.POST)
     public String showWelcomePage(ModelMap model, @RequestParam String name, @RequestParam String password, HttpSession session, @ModelAttribute Students student, Account account){
-        logger.info("just a test info log");
+
         String hash_password = repository.findPasswordbyName(name);
+        if (hash_password != null ){
         boolean isValidStudent = service.validateStudent(account , hash_password);
 
         if (!isValidStudent) {
             model.addAttribute("errorMessage", "Error: Invalid Credentials");
+            logger.warn("This user tried to login with errors: " + name);
             return "index";
         }
 
         else {
+            logger.info("This user logged in succesfully: " + name);
             Integer findId = repository.findIdbyName(name);
             List<Students> found = repository.findById(findId);
             List<Students> studen = registerService.showStudent(findId);
@@ -94,16 +97,15 @@ public class LoginController {
             model.addAttribute("student", studen.toString());
             model.put("findId", findId);
             model.put("name", name);
-            System.out.print(" " + findId + " ");
             String welcome = repository.findName(findId) + " " + repository.findSurnameName(findId);
             model.addAttribute("atr_name",  welcome);
             model.addAttribute("Id", findId);
             session.setAttribute("student_user", user);
-            System.out.print(model.get("atr_name"));
-            System.out.print(student.getName());
-            System.out.print(session.getAttribute( "student_user"));
             return "welcome";
-        }
+        }}
+        logger.warn("Invalid username: " + name);
+        model.addAttribute("errorMessage", "Error: Invalid Credentials");
+        return "index";
     }
     @RequestMapping(value = "/mypayment", method = RequestMethod.POST)
     public  ModelAndView addPayment(HttpSession session,HttpServletRequest request, HttpServletResponse response,
@@ -124,7 +126,7 @@ public class LoginController {
             Object name = model.get("name");
             Integer findId = repository.findIdbyName(name.toString());
             service.paysAccount(findId);
-            System.out.println(findId);
+            logger.info("This user paid for courses succesfully: " + name);
             model.addAttribute("message", "You have already paid for classes, so now it is possible to choose your modules.");
             return new ModelAndView("payments");
 
@@ -142,6 +144,7 @@ public class LoginController {
         Boolean fee = repository.findFeebyName(name.toString());
         if(fee){
         if(Integer.parseInt(id_module) < findAmount ){
+            logger.info("The user " + name + " enrolled succesfully to course with id " + id_module);
             hasModuleService.addMyModule(findId, id_module);
             model.put("succes", "You have succefully enrolled to this module. Go to mymodules to check");}
         else {
@@ -159,8 +162,6 @@ public class LoginController {
         System.out.println("MyModG");
         Object name = model.get("name");
         Integer findId = repository.findIdbyName(name.toString());
-        System.out.println(findId);
-        System.out.print(moduleRepository.findMyID(findId));
         Integer id[] = moduleRepository.findMyID(findId);
         String sent = null;
         if (id.length > 0)
@@ -171,9 +172,6 @@ public class LoginController {
                 sent = sent + " or " + " id = " + id[i];
             }
         mod.addObject("modules",  moduleService.findMyModule(sent));
-        System.out.println(sent);
-          // mod.addObject("modules",  moduleService.findMyModule(id[i]));
-        //mod.addObject("modules",  moduleRepository.findMyID(findId));
 
         return mod;}
         else
@@ -207,7 +205,6 @@ public class LoginController {
     public String showPayment(HttpSession session,HttpServletRequest request, HttpServletResponse response,
                               @ModelAttribute Account account, ModelMap model){
         if (session.getAttribute("student_user") != null) {
-            System.out.println("Hello");
             return "payments";
 
         }
