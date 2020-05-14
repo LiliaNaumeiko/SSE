@@ -29,18 +29,19 @@ public class RegisterController {
     public LoginService loginService;
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response,
-        @ModelAttribute("students") Students students,@ModelAttribute("account")Account account, @RequestParam String name, @RequestParam String password) {
+    public ModelAndView addUser(ModelMap model,HttpServletRequest request, HttpServletResponse response,
+        @ModelAttribute("students") Students students,@ModelAttribute("account")Account account, @RequestParam String username, @RequestParam String password) {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
-        boolean isValidStudent =loginService.validateUsername(  name );
+        boolean isValidStudent =loginService.validateUsername(  username );
         if (!isValidStudent) {
             service.registerStudent(students);
             loginService.registerAccount(account);
-                    return new ModelAndView("register");
+                    return new ModelAndView("index");
         }
 
         else {
-            return new ModelAndView("error", "firstname",students.getName());
+            model.addAttribute("errorMessage", "Error: Invalid Credentials");
+            return new ModelAndView("register");
 
         }
     }

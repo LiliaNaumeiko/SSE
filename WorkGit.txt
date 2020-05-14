@@ -1,4 +1,6 @@
 git add .
+git push -u origin master
+comm
 git status
 
 git pull <remote> <name-of-branch>//download the lates changes
@@ -6,4 +8,5 @@ git push <remote> <name-of-branch>//save changes
 
 
 git push https://github.com/LiliaNaumeiko/SecSoftEng.git 
+git pull https://github.com/LiliaNaumeiko/SSE.git 
 

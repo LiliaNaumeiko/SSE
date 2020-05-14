@@ -39,7 +39,7 @@ public class LoginService {
 
         String sql = "select * from account where username = '" + username +"' ;";
         List<Account> users = jdbcTemplate.query(sql, new UserMapper());
-        if (users.size() > 0 ){
+        if (users.size() == 1 ){
             return true;
         }
         return false;
@@ -58,7 +58,6 @@ public class LoginService {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12); // Strength set as 12
         List<Account> users = jdbcTemplate.query(sql1, new UserMapper());
         String sql = "insert into account values(?,?,?,?,?)";
-        System.out.print("in reg AC" + account.getPassword());
         jdbcTemplate.update(sql, new Object[] {account.getUsername(), encoder.encode(account.getPassword()), users.size()+1, 0, users.size()+1});
     }
 
@@ -69,7 +68,6 @@ public class LoginService {
 
     public void paysAccount(Integer id){
         String sql = "update account set fees=? where id =?";
-        System.out.print(this.jdbcTemplate.update(sql, 1, id));
         this.jdbcTemplate.update(sql, 1, id) ;
     }
 
