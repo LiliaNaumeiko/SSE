@@ -1,16 +1,24 @@
-{
-  var yourVlSpec = {
+function trElems() {
+  var tr1 = document.getElementById("dataTable");
+  var myData =[];
+  for( var i = 1; i < tr1.rows.length; i++) {
+  let p1 = {};
+  //alert(tr1.rows[i].cells.item(1).innerHTML);
+  p1.Nationality = tr1.rows[i].cells.item(3).innerHTML.trim();
+  p1.Sex = tr1.rows[i].cells.item(2).innerHTML.trim();
+  myData.push(p1);
+  };
+console.log(myData);
+var yourVlSpec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "data": {
-      "format": {
-        "type": "csv"
-      },
-      "url": "https://raw.githubusercontent.com/LiliaNaumeiko/SSE/master/stat.csv"
+       "values": [],
+         "name": "myData"
     },
     "transform": [
       {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"}
     ],
-    "width": 100,
+    "width": 150,
     "height": 500,
     "title": {
       "text": "Nationality",
@@ -51,6 +59,12 @@
         "titleFontSize":14,
         "labelFontSize":15}
     }
-  }
+  };
+
+vegaEmbed("#vis", yourVlSpec)
+ .then((res) => res.view
+    .renderer('svg')
+    .insert("myData",  myData)
+    .run()
+    );
 }
-vegaEmbed("#vis", yourVlSpec);

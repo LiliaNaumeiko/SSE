@@ -1,3 +1,0 @@
-2020-05-14 18:28:43,903 INFO o.s.b.StartupInfoLogger [main] Starting SseApplication on liliia-Vostro-15-3568 with PID 11526 (/home/liliia/Downloads/SecSoftEngineering/SecSoftEng-master/SSE/target/classes started by liliia in /home/liliia/Downloads/SecSoftEngineering/SecSoftEng-master/SSE)
-2020-05-14 18:28:43,911 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-05-14 18:28:47,656 INFO o.s.b.StartupInfoLogger [main] Started SseApplication in 4.453 seconds (JVM running for 5.335)

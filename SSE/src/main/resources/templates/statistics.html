@@ -21,6 +21,8 @@
 			<li role="presentation" th:align="right" style="position:absolute;top:0;right:0;"><a href="/logout" th:href="@{/logout}">Log out</a></li>
 		</ul>
 		<div id="vis" align="center"></div>
+		<div><button id="btnExportToCsv" type="button" class="button" align="center">Export current stat to csv format</button></div>
+		<div><button onclick="trElems();">Show current statistics </button> </div>
 		<table border="1" cellpadding="5" id="dataTable" >
 			<caption><h2>Statistics</h2></caption>
 			<thead>
@@ -40,7 +42,6 @@
 				<td th:text="${message.date_of_birth}"></td>
 			</tr>
 		</table>
-		<div><button id="btnExportToCsv" type="button" class="button" align="center">Export current stat to csv format</button></div>
 		<script>
 			const dataTable = document.getElementById("dataTable");
 			const btnExportToCsv = document.getElementById("btnExportToCsv");
